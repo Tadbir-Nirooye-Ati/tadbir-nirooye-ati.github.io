@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="اطلاعات تماس مهندسین مشاور تدبیر نیروی آتی در اصفهان، تلفن‌ها، ایمیل، اینستاگرام و موقعیت شرکت.">
+<meta name="theme-color" content="#373737">
+<meta property="og:type" content="website"><meta property="og:title" content="تماس با ما | تدبیر نیروی آتی"><meta property="og:description" content="اطلاعات تماس و راه‌های ارتباط با تدبیر نیروی آتی."><meta property="og:image" content="images/company-logo.png">
+<title>تماس با ما | تدبیر نیروی آتی</title>
+<link rel="icon" href="images/company-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="images/company-logo.png" alt="لوگوی تدبیر نیروی آتی">
+      <span>تدبیر نیروی آتی</span>
+    </a>
+    <div class="navlinks" id="site-navigation">
+      <a href="index.html" class="">خانه</a>
+<a href="about.html" class="">درباره ما</a>
+<a href="fields.html" class="">زمینه‌های فعالیت</a>
+<a href="equipment.html" class="">تجهیزات</a>
+<a href="products.html" class="">محصولات</a>
+<a href="projects.html" class="">پروژه‌ها</a>
+<a href="clients.html" class="">کارفرمایان</a>
+<a href="rankings.html" class="">رتبه‌ها</a>
+<a href="contact.html" class="active">تماس</a>
+
+    </div>
+    <button class="nav-toggle" type="button" aria-label="باز کردن منوی سایت" aria-expanded="false" aria-controls="site-navigation">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</nav>
+<header class="pagehead">
+  <div class="hero-grid"></div>
+  <div class="wrap">
+    <h1>تماس با ما</h1>
+    <p>برای مشاوره، برآورد پروژه و همکاری با مهندسین مشاور تدبیر نیروی آتی با ما در ارتباط باشید.</p>
+  </div>
+</header>
+
+<section class="contact-band" style="padding-top:90px;">
+  <div class="wrap">
+    <h2>شروع پروژه بعدی خود را با ما هماهنگ کنید</h2>
+    <p>برای مشاوره، برآورد پروژه یا هر پرسشی درباره خدمات، از راه‌های زیر با ما در ارتباط باشید.</p>
+    <div class="contact-callout">
+      <h3>برای مشاوره و ثبت درخواست، با ما تماس بگیرید</h3>
+      <p>با دفتر شرکت یا شمارهٔ همراه تماس بگیرید تا دربارهٔ خدمات و پروژه‌تان صحبت کنیم.</p>
+      <div class="contact-call-actions">
+        <a class="btn contact-call-primary" href="tel:+983150104237">تماس با دفتر <b dir="ltr">031-50104237</b></a>
+        <a class="btn contact-call-secondary" href="tel:+989128985536">تماس با همراه <b dir="ltr">09128985536</b></a>
+      </div>
+    </div>
+    <div class="contact-inner" style="margin-top:44px;">
+      <div class="contact-list">
+        <div class="row"><span>ADDRESS</span><span>اصفهان، خیابان چهارباغ بالا، جنب کوچه عطاالملک، شرکت تدبیر نیروی آتی</span></div>
+        <div class="row"><span>PHONE</span><a class="mono" dir="ltr" href="tel:+983150104237">031-50104237</a></div>
+        <div class="row"><span>MOBILE</span><a class="mono" dir="ltr" href="tel:+989128985536">09128985536</a></div>
+        <div class="row"><span>INSTAGRAM</span><a class="mono" dir="ltr" href="https://www.instagram.com/tadbir.nirooye.ati" target="_blank" rel="noopener">@tadbir.nirooye.ati</a></div>
+        <div class="row"><span>EMAIL</span><a class="mono" dir="ltr" href="mailto:Tadbirnirooyeati@gmail.com">Tadbirnirooyeati@gmail.com</a></div>
+        <a class="btn btn-primary location-link" href="https://neshan.org/maps/places/e1a4ca023ee7bea9d6724e3aa79fa7cd#c32.630-51.671-15z-0p" target="_blank" rel="noopener">مشاهده موقعیت در نشان</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <p>© مهندسین مشاور تدبیر نیروی آتی</p>
+    <span class="mono">SURVEYING · GIS · HYDROGRAPHY · CADASTRE</span>
+  </div>
+</footer>
+<script>
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('show'); } });
+  }, {threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+<script src="site.js" defer></script>
+<script>
+(function(){
+  var hero=document.querySelector('body:has(.contact-band) .pagehead');
+  if(!hero)return;
+  var wrap=hero.querySelector('.wrap');
+  if(!wrap)return;
+  wrap.classList.add('contact-banner-wrap');
+  var copy=document.createElement('div');
+  copy.className='contact-banner-copy';
+  copy.innerHTML='<span class="contact-banner-kicker">TNA / DIRECT CONNECTION</span><h1>شروع یک<br><em>گفت‌وگوی حرفه‌ای</em></h1><p>برای مشاوره، برآورد پروژه یا شروع یک همکاری تازه، با تیم تدبیر نیروی آتی در ارتباط باشید.</p><a class="contact-banner-cta" href="#contact-details">راه‌های ارتباطی <b>←</b></a>';
+  var visual=document.createElement('div');
+  visual.className='contact-banner-visual';
+  visual.innerHTML='<div class="contact-orbit"></div><div class="contact-path contact-path-one"></div><div class="contact-path contact-path-two"></div><div class="contact-center"><strong>CONTACT</strong><span>اعتماد · پاسخ‌گویی</span></div><div class="contact-float contact-float-one"><b>01</b><span>تماس مستقیم</span></div><div class="contact-float contact-float-two"><b>02</b><span>مشاوره پروژه</span></div><div class="contact-float contact-float-three"><b>03</b><span>همکاری حرفه‌ای</span></div>';
+  wrap.replaceChildren(copy,visual);
+  var details=document.querySelector('.contact-list');
+  if(details)details.id='contact-details';
+}());
+</script>
+</body>
+</html>

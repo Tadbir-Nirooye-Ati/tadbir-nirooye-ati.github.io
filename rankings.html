@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="گواهینامه صلاحیت خدمات مشاور شرکت تدبیر نیروی آتی.">
+<meta name="theme-color" content="#373737">
+<meta property="og:type" content="website"><meta property="og:title" content="رتبه‌ها | تدبیر نیروی آتی"><meta property="og:description" content="گواهی‌ها و صلاحیت‌های مشاوره شرکت تدبیر نیروی آتی."><meta property="og:image" content="images/certificate-consultant.jpg">
+<title>رتبه‌ها | تدبیر نیروی آتی</title>
+<link rel="icon" href="images/company-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="images/company-logo.png" alt="لوگوی تدبیر نیروی آتی">
+      <span>تدبیر نیروی آتی</span>
+    </a>
+    <div class="navlinks" id="site-navigation">
+      <a href="index.html" class="">خانه</a>
+<a href="about.html" class="">درباره ما</a>
+<a href="fields.html" class="">زمینه‌های فعالیت</a>
+<a href="equipment.html" class="">تجهیزات</a>
+<a href="products.html" class="">محصولات</a>
+<a href="projects.html" class="">پروژه‌ها</a>
+<a href="clients.html" class="">کارفرمایان</a>
+<a href="rankings.html" class="active">رتبه‌ها</a>
+<a href="contact.html" class="">تماس</a>
+
+    </div>
+    <button class="nav-toggle" type="button" aria-label="باز کردن منوی سایت" aria-expanded="false" aria-controls="site-navigation">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</nav>
+<header class="pagehead">
+  <div class="hero-grid"></div>
+  <div class="wrap">
+    <h1>رتبه‌ها</h1>
+    <p>گواهینامه‌ها و صلاحیت‌های حرفه‌ای مهندسین مشاور تدبیر نیروی آتی.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="certificate-layout">
+      <div class="certificate-copy">
+        <span class="sec-eyebrow">CERTIFICATE</span>
+        <h2>گواهینامه صلاحیت خدمات مشاور</h2>
+        <p>گواهینامه صلاحیت خدمات مشاور شرکت تدبیر نیروی آتی صادره از سازمان مدیریت و برنامه‌ریزی استان اصفهان.</p>
+        <p class="certificate-note">برای مشاهده جزئیات، تصویر گواهینامه را انتخاب کنید.</p>
+        <a class="btn btn-primary" href="images/certificate-consultant.jpg" target="_blank" rel="noopener">مشاهده تصویر گواهینامه</a>
+      </div>
+      <figure class="certificate-frame">
+        <a href="images/certificate-consultant.jpg" target="_blank" rel="noopener">
+          <img src="images/certificate-consultant.jpg" alt="گواهینامه صلاحیت خدمات مشاور شرکت تدبیر نیروی آتی" loading="eager">
+        </a>
+        <figcaption>گواهینامه صلاحیت خدمات مشاور</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <p>© مهندسین مشاور تدبیر نیروی آتی</p>
+    <span class="mono">SURVEYING · GIS · HYDROGRAPHY · CADASTRE</span>
+  </div>
+</footer>
+<script>
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('show'); } });
+  }, {threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+<script src="site.js" defer></script>
+<script>
+(function(){
+  var hero=document.querySelector('body:has(.certificate-layout) .pagehead');
+  if(!hero)return;
+  var wrap=hero.querySelector('.wrap');
+  if(!wrap)return;
+  wrap.classList.add('rankings-banner-wrap');
+  var copy=document.createElement('div');
+  copy.className='rankings-banner-copy';
+  copy.innerHTML='<span class="rankings-banner-kicker">TNA / OFFICIAL RECORD</span><h1>اعتبار<br><em>حاصل تجربه است</em></h1><p>گواهی‌ها و صلاحیت‌های حرفه‌ای شرکت؛ نشانه‌ای از توان تخصصی، تجربه اجرایی و اعتماد کارفرمایان.</p><a class="rankings-banner-cta" href="#certificate-section">مشاهده گواهی‌ها <b>←</b></a>';
+  var visual=document.createElement('div');
+  visual.className='rankings-banner-visual';
+  visual.innerHTML='<div class="rankings-orbit"></div><div class="rankings-path rankings-path-one"></div><div class="rankings-path rankings-path-two"></div><figure class="rankings-document"><img src="images/rankings-minimal.jpg" alt="تصویر مینیمال سند و اعتبار"><figcaption>اعتبار حرفه‌ای و تجربه اجرایی</figcaption></figure><div class="rankings-badge rankings-badge-one"><strong>01</strong><span>صلاحیت</span></div><div class="rankings-badge rankings-badge-two"><strong>02</strong><span>اعتماد</span></div><div class="rankings-badge rankings-badge-three"><strong>03</strong><span>تجربه</span></div><div class="rankings-center"><strong>RANKING</strong><span>تخصص · تجربه · اعتبار</span></div>';
+  wrap.replaceChildren(copy,visual);
+  var section=document.querySelector('.certificate-layout');
+  if(section)section.closest('section').id='certificate-section';
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="درباره مهندسین مشاور تدبیر نیروی آتی، چشم‌انداز، خط‌مشی و اهداف شرکت.">
+<meta name="theme-color" content="#373737">
+<meta property="og:type" content="website"><meta property="og:title" content="درباره ما | تدبیر نیروی آتی"><meta property="og:description" content="معرفی شرکت، رویکرد و توانمندی‌های تدبیر نیروی آتی."><meta property="og:image" content="images/slider/optimized/industrial-survey.jpg">
+<title>درباره ما | تدبیر نیروی آتی</title>
+<link rel="icon" href="images/company-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="images/company-logo.png" alt="لوگوی تدبیر نیروی آتی">
+      <span>تدبیر نیروی آتی</span>
+    </a>
+    <div class="navlinks" id="site-navigation">
+      <a href="index.html" class="">خانه</a>
+<a href="about.html" class="active">درباره ما</a>
+<a href="fields.html" class="">زمینه‌های فعالیت</a>
+<a href="equipment.html" class="">تجهیزات</a>
+<a href="products.html" class="">محصولات</a>
+<a href="projects.html" class="">پروژه‌ها</a>
+<a href="clients.html" class="">کارفرمایان</a>
+<a href="rankings.html" class="">رتبه‌ها</a>
+<a href="contact.html" class="">تماس</a>
+
+    </div>
+    <button class="nav-toggle" type="button" aria-label="باز کردن منوی سایت" aria-expanded="false" aria-controls="site-navigation">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</nav>
+<header class="pagehead">
+  <div class="hero-grid"></div>
+  <div class="wrap">
+    <h1>درباره ما</h1>
+    <p>معرفی شرکت، نمودار سازمانی، چشم‌انداز، خط‌مشی و اهداف و استراتژی.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <p>دقت، زبان مشترک ما با هر پروژه است.</p>
+      <p>مهندسین مشاور تدبیر نیروی آتی در حوزه‌های نقشه‌برداری، GIS، هیدروگرافی و کاداستر فعالیت می‌کند. رویکرد ما ترکیب برداشت میدانی دقیق با پردازش تخصصی داده است تا خروجی نهایی، قابل‌اتکا برای تصمیم‌گیری مهندسی و مدیریتی باشد.</p>
+      <div class="about-highlight">
+        <div><strong>برداشت و اندازه‌گیری</strong><span>جمع‌آوری دقیق داده از میدان</span></div>
+        <div><strong>پردازش و تحلیل</strong><span>تبدیل داده به اطلاعات کاربردی</span></div>
+        <div><strong>تحویل و همراهی</strong><span>مستندسازی و پشتیبانی پروژه</span></div>
+      </div>
+    </div>
+    <div class="about-items">
+      <div class="about-item"><h5>چشم‌انداز</h5><p>ارائه راهکارهای دقیق و قابل اتکا برای تصمیم‌گیری بهتر در پروژه‌های عمرانی و زیرساختی.</p></div>
+      <div class="about-item"><h5>خط‌مشی</h5><p>تعهد به کیفیت، دقت، مستندسازی شفاف و استفاده مسئولانه از فناوری‌های نوین مهندسی.</p></div>
+      <div class="about-item"><h5>اهداف و استراتژی</h5><p>توسعه توان تخصصی، بهبود مستمر فرآیندها و ساختن همکاری‌های پایدار با کارفرمایان.</p></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <p>© مهندسین مشاور تدبیر نیروی آتی</p>
+    <span class="mono">SURVEYING · GIS · HYDROGRAPHY · CADASTRE</span>
+  </div>
+</footer>
+<script>
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('show'); } });
+  }, {threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+<script src="site.js" defer></script>
+<script>
+(function(){
+  document.body.classList.add('about-page');
+  var pageMarker=document.createElement('div');
+  pageMarker.className='about-grid about-page-marker';
+  pageMarker.hidden=true;
+  document.body.appendChild(pageMarker);
+  var hero=document.querySelector('.pagehead');
+  if(hero){
+    var wrap=hero.querySelector('.wrap');
+    wrap.classList.add('about-banner-wrap');
+    var copy=document.createElement('div');
+    copy.className='about-banner-copy';
+    copy.innerHTML='<span class="about-banner-kicker">TNA / COMPANY IDENTITY</span><h1>دقت، زبان<br><em>مشترک ماست</em></h1><p>تدبیر نیروی آتی؛ همراهی متخصص برای تبدیل داده‌های مکانی به تصمیم‌های دقیق و قابل اتکا.</p><a class="about-banner-cta" href="#about-direction">آشنایی با شرکت <b>←</b></a>';
+    var visual=document.createElement('div');
+    visual.className='about-banner-visual';
+    visual.innerHTML='<div class="about-orbit"></div><div class="about-path about-path-one"></div><div class="about-path about-path-two"></div><div class="about-dossier"><div class="about-dossier-top">TNA / ABOUT US</div><div class="about-dossier-line"></div><div class="about-dossier-title">COMPANY<br>PROFILE</div><div class="about-dossier-mark">TNA</div></div><div class="about-float about-float-one"><b>01</b><span>تخصص</span></div><div class="about-float about-float-two"><b>02</b><span>تعهد</span></div><div class="about-float about-float-three"><b>03</b><span>توسعه</span></div>';
+    wrap.replaceChildren(copy,visual);
+  }
+  var main=document.querySelector('section .about-grid');
+  if(main)main=main.closest('section');
+  if(main)main.remove();
+  var extra=document.createElement('div');
+  extra.className='about-extra-content';
+  extra.innerHTML='<section class="about-direction-section"><div class="wrap"><div class="about-section-heading"><span class="about-eyebrow">OUR DIRECTION</span><h2>مسیر ما از تخصص تا توسعه</h2><p>چشم‌انداز و مأموریت تدبیر نیروی آتی، بر پایه دانش فنی، اخلاق حرفه‌ای و ارائه خدمات مهندسی قابل اعتماد شکل گرفته است.</p></div><div class="about-direction-grid"><article class="about-text-card about-mission-card"><span class="about-card-number">01</span><h3>مأموریت ما</h3><p>طراحی، مهندسی، مشاوره، نظارت، اجرا و ارائه خدمات فنی و مهندسی در پروژه‌های نقشه‌برداری، به‌ویژه در صنعت برق، انرژی و خطوط انتقال نیرو.</p><p>ما با تکیه بر نیروی انسانی متخصص و متعهد، خدماتی دقیق، باکیفیت و قابل اعتماد به کارفرمایان ارائه می‌کنیم.</p></article><article class="about-text-card about-vision-card"><span class="about-card-number">02</span><h3>چشم‌انداز ما</h3><p>کسب جایگاهی شایسته در میان شرکت‌های برتر مهندسی در حوزه نقشه‌برداری، فتوگرامتری، GIS، سنجش از دور، حدنگاری، آب‌نگاری، مدل‌سازی سه‌بعدی و خدمات تخصصی مهندسی.</p><p>هدف ما حضور فعال در پروژه‌های بزرگ داخلی و بین‌المللی با تکیه بر استانداردهای روز دنیا و اخلاق حرفه‌ای است.</p></article></div></div></section><section class="about-strategy-section"><div class="wrap"><div class="about-section-heading"><span class="about-eyebrow">STRATEGIC ROADMAP</span><h2>نقشه راه تدبیر نیروی آتی</h2></div><div class="about-strategy-grid"><article class="about-strategy-card"><div class="about-strategy-head"><span>01</span><h3>استراتژی میان‌مدت</h3></div><ul><li>توسعه کمی و کیفی فعالیت‌ها در حوزه علوم مکانی</li><li>ارتقای بهره‌وری و تجهیز شرکت به فناوری‌های نوین</li><li>حضور در جوامع علمی، فنی و حرفه‌ای</li><li>ارتقای دانش کادر فنی و اداری</li><li>استفاده از خرد جمعی و ایجاد محیطی صمیمی و همدل</li></ul></article><article class="about-strategy-card about-strategy-dark"><div class="about-strategy-head"><span>02</span><h3>استراتژی بلندمدت</h3></div><ul><li>ایجاد اشتغال مناسب در حوزه علوم مکانی</li><li>ارتقای شأن شغلی متخصصان این حوزه</li><li>ارائه خدمات کارشناسی و مشاوره‌ای در سطح بین‌المللی</li><li>دستیابی به بالاترین سطح توانمندی مشاوره‌ای</li><li>ارائه خدمات مهندسی و ارزآوری برای کشور</li></ul></article></div></div></section><section class="about-board-section"><div class="wrap"><div class="about-section-heading"><span class="about-eyebrow">LEADERSHIP</span><h2>هیئت‌مدیره شرکت</h2><p>تجربه، تخصص و نگاه توسعه‌محور، پایه تصمیم‌گیری‌های شرکت است.</p></div><div class="about-board-grid"><article class="about-board-card"><div class="about-avatar">س‌ا</div><span>رئیس هیئت‌مدیره و مدیرعامل</span><h3>سعید انصاری‌فر</h3><p>مهندسی نقشه‌برداری<br>کارشناس اداره ثبت اسناد و املاک<br>بیش از ۱۵ سال سابقه در نقشه‌برداری صنعتی</p></article><article class="about-board-card"><div class="about-avatar">م‌ح</div><span>نایب‌رئیس هیئت‌مدیره</span><h3>سید محمد حکمی‌ها</h3><p>مهندسی عمران<br>بیش از ۲۰ سال سابقه در زمینه خطوط انتقال نیرو</p></article><article class="about-board-card"><div class="about-avatar">ع‌و</div><span>عضو اصلی هیئت‌مدیره</span><h3>علیرضا واحدی</h3><p>مهندسی نقشه‌برداری<br>بیش از ۲۰ سال سابقه در نقشه‌برداری و خطوط انتقال نیرو</p></article></div></div></section>';
+  var strategy=extra.querySelector('.about-strategy-section');
+  if(strategy){
+    var values=document.createElement('section');
+    values.className='about-values-section';
+    values.innerHTML='<div class="wrap"><div class="about-section-heading"><span class="about-eyebrow">OUR PRINCIPLES</span><h2>چه چیزی ما را متمایز می‌کند؟</h2></div><div class="about-values-grid"><article><span>01</span><h3>دقت</h3><p>تصمیم‌گیری بر پایه داده‌های دقیق و قابل اتکا.</p></article><article><span>02</span><h3>تخصص</h3><p>تکیه بر دانش فنی و تجربه نیروهای متخصص.</p></article><article><span>03</span><h3>تعهد</h3><p>همراهی مسئولانه از آغاز تا پایان پروژه.</p></article><article><span>04</span><h3>توسعه</h3><p>یادگیری مستمر و حرکت همگام با فناوری.</p></article></div></div>';
+    strategy.parentNode.insertBefore(values,strategy);
+  }
+  var direction=extra.querySelector('.about-direction-section');
+  var valuesSection=extra.querySelector('.about-values-section');
+  var board=extra.querySelector('.about-board-section');
+  if(direction)direction.id='about-direction';
+  if(valuesSection)valuesSection.id='about-values';
+  if(strategy)strategy.id='about-strategy';
+  if(board)board.id='about-board';
+  var miniNav=document.createElement('nav');
+  miniNav.className='about-mini-nav';
+  miniNav.setAttribute('aria-label','بخش‌های صفحه درباره ما');
+  miniNav.innerHTML='<div class="wrap"><span class="about-mini-label">در این صفحه می‌خوانید</span><div class="about-mini-links"><a href="#about-direction">مأموریت و چشم‌انداز</a><a href="#about-values">ارزش‌های ما</a><a href="#about-strategy">استراتژی‌ها</a><a href="#about-board">هیئت‌مدیره</a></div></div>';
+  var footer=document.querySelector('footer');
+  if(footer)footer.parentNode.insertBefore(extra,footer);
+  if(footer)footer.parentNode.insertBefore(miniNav,extra);
+}());
+</script>
+<script>
+(function(){
+  var board=document.querySelector('.about-board-section');
+  if(!board) return;
+  var cards=board.querySelectorAll('.about-board-card');
+  if(!cards.length) return;
+  cards.forEach(function(card){
+    card.setAttribute('role','button');
+    card.setAttribute('tabindex','0');
+    card.setAttribute('aria-label','نمایش رزومه '+(card.querySelector('h3')?.textContent||''));
+  });
+  var modal=document.createElement('div');
+  modal.className='board-resume-modal';
+  modal.hidden=true;
+  modal.innerHTML='<div class="board-resume-backdrop" data-close-resume></div><div class="board-resume-dialog" role="dialog" aria-modal="true" aria-labelledby="board-resume-name"><button class="board-resume-close" type="button" aria-label="بستن" data-close-resume>×</button><span class="board-resume-label">رزومه عضو هیئت‌مدیره</span><div class="board-resume-avatar"></div><span class="board-resume-role"></span><h2 id="board-resume-name"></h2><div class="board-resume-body"></div></div>';
+  document.body.appendChild(modal);
+  var name=modal.querySelector('#board-resume-name'),role=modal.querySelector('.board-resume-role'),body=modal.querySelector('.board-resume-body'),avatar=modal.querySelector('.board-resume-avatar');
+  var photoData={'سعید انصاری‌فر':'images/board/saeed-ansari.jpg','سید محمد حکمی‌ها':'images/board/mohammad-hakimi.jpg','علیرضا واحدی':'images/board/alireza-vahedi.jpg'};
+  var resumeData={
+    'سعید انصاری‌فر':{education:'مهندسی نقشه‌برداری',experience:'کارشناس اداره ثبت اسناد و املاک؛ بیش از ۱۵ سال سابقه در نقشه‌برداری صنعتی',workHistory:['شرکت مشانیر','شرکت عمرانی نقش‌آفرین توانا','شرکت توسعه احداث نیرو کاسپین','شرکت تدبیر نیروی آتی'],certificates:[['دوره نرم‌افزار ARC GIS','۳۲ ساعت','شرکت گام'],['دوره GIS پیشرفته','۳۲ ساعت','شرکت گام']]},
+    'سید محمد حکمی‌ها':{education:'مهندسی عمران',experience:'بیش از ۲۰ سال سابقه در زمینه خطوط انتقال نیرو',workHistory:['شرکت مهندسین مشاور قدس نیرو','شرکت مشانیر','شرکت بصیر اندیشان خلاق','شرکت تدبیر نیروی آتی'],certificates:[['ایمنی و بهداشت کار، ویژه مسئولان ایمنی کارگاه‌ها','۴۰ ساعت','مرکز تحقیقات و تعلیمات حفاظت فنی و بهداشت کار استان اصفهان'],['شناسایی خطرات و ارزیابی ریسک، ویژه مسئولان کارگاه‌ها','۱۶ ساعت','گروه تحقیقات و تعلیمات حفاظت فنی و بهداشت کار استان اصفهان']]},
+    'علیرضا واحدی':{education:'مهندسی نقشه‌برداری',experience:'بیش از ۲۰ سال سابقه در زمینه نقشه‌برداری و خطوط انتقال نیرو',workHistory:['شرکت نیروسان','شرکت نیروگستران سپهر','شرکت مشانیر','شرکت توسعه عمران تیرداد','شرکت تدبیر نیروی آتی','شرکت بصیر اندیشان خلاق'],certificates:[['استاندارد PMBOK در یک نگاه','۲ ساعت','شرکت مشانیر'],['اصول، فنون و هنر مذاکره','۳ ساعت','شرکت مشانیر'],['اطفای حریق و مانور آتش‌نشانی','۲ ساعت','شرکت مشانیر'],['فیبرهای نوری، کابل OPGW و تحلیل نتایج آزمون و عملکرد دستگاه OTDR','۱۲ ساعت','شرکت آلومتک'],['ایمنی و بهداشت کار در عملیات پیمانکاری، ویژه کارگران','۸ ساعت','محل برگزاری در اطلاعات ارسالی مشخص نشده است']]}
+  };
+  cards.forEach(function(card){var title=card.querySelector('h3'),avatarEl=card.querySelector('.about-avatar'),photo=title&&photoData[title.textContent.trim()];if(photo&&avatarEl){avatarEl.innerHTML='<img src="'+photo+'" alt="'+title.textContent.trim()+'">';avatarEl.classList.add('has-photo')}});
+  function open(card){
+    var title=card.querySelector('h3'),label=card.querySelector('span'),copy=card.querySelector('p'),data=resumeData[title?title.textContent.trim():''];
+    name.textContent=title?title.textContent.trim():'';
+    role.textContent=label?label.textContent.trim():'';
+    if(data){
+      body.innerHTML='<section class="resume-block"><h3>تحصیلات</h3><p>'+data.education+'</p></section><section class="resume-block"><h3>سوابق حرفه‌ای</h3><p>'+data.experience+'</p></section><section class="resume-block"><h3>سوابق کاری</h3><ul>'+data.workHistory.map(function(item){return '<li>'+item+'</li>'}).join('')+'</ul></section><section class="resume-block"><h3>دوره‌ها و گواهینامه‌ها</h3><ul>'+data.certificates.map(function(item){return '<li><strong>'+item[0]+'</strong><span>'+item[1]+' — '+item[2]+'</span></li>'}).join('')+'</ul></section>';
+    } else { body.innerHTML=copy?copy.innerHTML:''; }
+    var photo=photoData[name.textContent.trim()]; avatar.innerHTML=photo?'<img src="'+photo+'" alt="'+name.textContent.trim()+'">':(name.textContent||'').trim().slice(0,2); avatar.classList.toggle('has-photo',!!photo);
+    modal.hidden=false; document.body.classList.add('resume-modal-open'); modal.querySelector('.board-resume-close').focus();
+  }
+  function close(){modal.hidden=true;document.body.classList.remove('resume-modal-open')}
+  cards.forEach(function(card){card.addEventListener('click',function(){open(card)});card.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(card)}})});
+  modal.addEventListener('click',function(e){if(e.target.hasAttribute('data-close-resume'))close()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!modal.hidden)close()});
+}());
+</script>
+<script>
+(function(){
+  var anchor=document.querySelector('.about-strategy-section');
+  if(!anchor || document.querySelector('.about-growth-section')) return;
+  anchor.style.display='none';
+  var section=document.createElement('section');
+  section.className='about-growth-section';
+  section.id='about-growth';
+  section.innerHTML='<div class="wrap"><div class="about-section-heading"><span class="about-eyebrow">GROWTH PATH</span><h2>مسیر رشد شرکت</h2><p>از آغاز فعالیت تا امروز؛ مسیری که با تخصص، تعهد و نگاه توسعه‌محور شکل گرفته است.</p></div><div class="about-growth-timeline"><article class="about-growth-step"><span class="about-growth-dot">۰۱</span><div class="about-growth-card"><small>شروع فعالیت</small><h3>پایه‌گذاری شرکت</h3><p>آغاز فعالیت حرفه‌ای در حوزه علوم مکانی و خدمات نقشه‌برداری.</p></div></article><article class="about-growth-step"><span class="about-growth-dot">۰۲</span><div class="about-growth-card"><small>ماموریت</small><h3>خدمات دقیق و قابل اتکا</h3><p>طراحی، مهندسی، مشاوره، نظارت و اجرای پروژه‌های تخصصی.</p></div></article><article class="about-growth-step"><span class="about-growth-dot">۰۳</span><div class="about-growth-card"><small>چشم‌انداز</small><h3>حرکت به سمت جایگاه برتر</h3><p>توسعه توان فنی و حضور مؤثر در پروژه‌های بزرگ داخلی و بین‌المللی.</p></div></article><article class="about-growth-step"><span class="about-growth-dot">۰۴</span><div class="about-growth-card"><small>استراتژی</small><h3>رشد دانش و فناوری</h3><p>تجهیز به فناوری روز، ارتقای نیروی انسانی و توسعه همکاری‌های پایدار.</p></div></article><article class="about-growth-step about-growth-current"><span class="about-growth-dot">امروز</span><div class="about-growth-card"><small>هیئت‌مدیره</small><h3>هدایت یک تیم متخصص</h3><p>تجربه و تخصص مدیران در مسیر ساختن آینده‌ای دقیق‌تر.</p></div></article></div></div>';
+  anchor.insertAdjacentElement('beforebegin',section);
+}());
+</script>
+<script>
+(function(){
+  // Recovery guard: اگر اسکریپت اصلی به‌دلیل نسخه‌ی قدیمی فایل یا خطای جزئی متوقف شد،
+  // محتوای صفحه درباره‌ما را مستقل از آن وارد می‌کند.
+  if(document.querySelector('.about-extra-content')) return;
+  var recovery=document.createElement('div');
+  recovery.className='about-extra-content';
+  recovery.innerHTML='<section class="about-direction-section" id="about-direction"><div class="wrap"><div class="about-section-heading"><span class="about-eyebrow">OUR DIRECTION</span><h2>مسیر ما از تخصص تا توسعه</h2><p>چشم‌انداز و مأموریت تدبیر نیروی آتی، بر پایه دانش فنی، اخلاق حرفه‌ای و ارائه خدمات مهندسی قابل اعتماد شکل گرفته است.</p></div><div class="about-direction-grid"><article class="about-text-card about-mission-card"><span class="about-card-number">01</span><h3>مأموریت ما</h3><p>طراحی، مهندسی، مشاوره، نظارت، اجرا و ارائه خدمات فنی و مهندسی در پروژه‌های نقشه‌برداری، به‌ویژه در صنعت برق، انرژی و خطوط انتقال نیرو.</p></article><article class="about-text-card about-vision-card"><span class="about-card-number">02</span><h3>چشم‌انداز ما</h3><p>کسب جایگاهی شایسته در میان شرکت‌های برتر مهندسی در حوزه علوم مکانی و حضور فعال در پروژه‌های بزرگ داخلی و بین‌المللی.</p></article></div></div></section><section class="about-values-section" id="about-values"><div class="wrap"><div class="about-section-heading"><span class="about-eyebrow">OUR PRINCIPLES</span><h2>ارزش‌های ما</h2></div><div class="about-values-grid"><article><span>01</span><h3>دقت</h3><p>تصمیم‌گیری بر پایه داده‌های دقیق و قابل اتکا.</p></article><article><span>02</span><h3>تخصص</h3><p>تکیه بر دانش فنی و تجربه نیروهای متخصص.</p></article><article><span>03</span><h3>تعهد</h3><p>همراهی مسئولانه از آغاز تا پایان پروژه.</p></article><article><span>04</span><h3>توسعه</h3><p>یادگیری مستمر و حرکت همگام با فناوری.</p></article></div></div></section><section class="about-strategy-section" id="about-strategy"><div class="wrap"><div class="about-section-heading"><span class="about-eyebrow">STRATEGIC ROADMAP</span><h2>نقشه راه تدبیر نیروی آتی</h2></div><div class="about-strategy-grid"><article class="about-strategy-card"><div class="about-strategy-head"><span>01</span><h3>استراتژی میان‌مدت</h3></div><ul><li>توسعه کمی و کیفی فعالیت‌ها در حوزه علوم مکانی</li><li>ارتقای بهره‌وری و تجهیز شرکت به فناوری‌های نوین</li><li>حضور در جوامع علمی، فنی و حرفه‌ای</li><li>ارتقای دانش کادر فنی و اداری</li></ul></article><article class="about-strategy-card about-strategy-dark"><div class="about-strategy-head"><span>02</span><h3>استراتژی بلندمدت</h3></div><ul><li>ایجاد اشتغال مناسب در حوزه علوم مکانی</li><li>ارتقای شأن شغلی متخصصان</li><li>ارائه خدمات مهندسی در سطح بین‌المللی</li><li>ارزآوری برای کشور</li></ul></article></div></div></section><section class="about-board-section" id="about-board"><div class="wrap"><div class="about-section-heading"><span class="about-eyebrow">LEADERSHIP</span><h2>هیئت‌مدیره شرکت</h2></div><div class="about-board-grid"><article class="about-board-card"><div class="about-avatar">س‌ا</div><span>رئیس هیئت‌مدیره و مدیرعامل</span><h3>سعید انصاری‌فر</h3><p>مهندسی نقشه‌برداری<br>کارشناس اداره ثبت اسناد و املاک<br>بیش از ۱۵ سال سابقه در نقشه‌برداری صنعتی</p></article><article class="about-board-card"><div class="about-avatar">م‌ح</div><span>نایب‌رئیس هیئت‌مدیره</span><h3>سید محمد حکمی‌ها</h3><p>مهندسی عمران<br>بیش از ۲۰ سال سابقه در زمینه خطوط انتقال نیرو</p></article><article class="about-board-card"><div class="about-avatar">ع‌و</div><span>عضو اصلی هیئت‌مدیره</span><h3>علیرضا واحدی</h3><p>مهندسی نقشه‌برداری<br>بیش از ۲۰ سال سابقه در نقشه‌برداری و خطوط انتقال نیرو</p></article></div></div></section>';
+  var footer=document.querySelector('footer');
+  if(footer) footer.parentNode.insertBefore(recovery,footer); else document.body.appendChild(recovery);
+  var nav=document.createElement('nav');
+  nav.className='about-mini-nav';
+  nav.innerHTML='<div class="wrap"><span class="about-mini-label">در این صفحه می‌خوانید</span><div class="about-mini-links"><a href="#about-direction">مأموریت و چشم‌انداز</a><a href="#about-values">ارزش‌های ما</a><a href="#about-strategy">استراتژی‌ها</a><a href="#about-board">هیئت‌مدیره</a></div></div>';
+  if(footer) footer.parentNode.insertBefore(nav,recovery); else document.body.insertBefore(nav,recovery);
+}());
+</script>
+<script>
+(function(){
+  var work={
+    '\u0633\u0639\u06cc\u062f \u0627\u0646\u0635\u0627\u0631\u06cc\u200c\u0641\u0631':['\u0634\u0631\u06a9\u062a \u0645\u0634\u0627\u0646\u06cc\u0631','\u0634\u0631\u06a9\u062a \u0639\u0645\u0631\u0627\u0646\u06cc \u0646\u0642\u0634\u200c\u0622\u0641\u0631\u06cc\u0646 \u062a\u0648\u0627\u0646\u0627','\u0634\u0631\u06a9\u062a \u062a\u0648\u0633\u0639\u0647 \u0627\u062d\u062f\u0627\u062b \u0646\u06cc\u0631\u0648 \u06a9\u0627\u0633\u067e\u06cc\u0646','\u0634\u0631\u06a9\u062a \u062a\u062f\u0628\u06cc\u0631 \u0646\u06cc\u0631\u0648\u06cc \u0622\u062a\u06cc'],
+    '\u0633\u06cc\u062f \u0645\u062d\u0645\u062f \u062d\u06a9\u0645\u06cc\u200c\u0647\u0627':['\u0634\u0631\u06a9\u062a \u0645\u0647\u0646\u062f\u0633\u06cc\u0646 \u0645\u0634\u0627\u0648\u0631 \u0642\u062f\u0633 \u0646\u06cc\u0631\u0648','\u0634\u0631\u06a9\u062a \u0645\u0634\u0627\u0646\u06cc\u0631','\u0634\u0631\u06a9\u062a \u0628\u0635\u06cc\u0631 \u0627\u0646\u062f\u06cc\u0634\u0627\u0646 \u062e\u0644\u0627\u0642','\u0634\u0631\u06a9\u062a \u062a\u062f\u0628\u06cc\u0631 \u0646\u06cc\u0631\u0648\u06cc \u0622\u062a\u06cc'],
+    '\u0639\u0644\u06cc\u0631\u0636\u0627 \u0648\u0627\u062d\u062f\u06cc':['\u0634\u0631\u06a9\u062a \u0646\u06cc\u0631\u0648\u0633\u0627\u0646','\u0634\u0631\u06a9\u062a \u0646\u06cc\u0631\u0648\u06af\u0633\u062a\u0631\u0627\u0646 \u0633\u067e\u0647\u0631','\u0634\u0631\u06a9\u062a \u0645\u0634\u0627\u0646\u06cc\u0631','\u0634\u0631\u06a9\u062a \u062a\u0648\u0633\u0639\u0647 \u0639\u0645\u0631\u0627\u0646 \u062a\u06cc\u0631\u062f\u0627\u062f','\u0634\u0631\u06a9\u062a \u062a\u062f\u0628\u06cc\u0631 \u0646\u06cc\u0631\u0648\u06cc \u0622\u062a\u06cc','\u0634\u0631\u06a9\u062a \u0628\u0635\u06cc\u0631 \u0627\u0646\u062f\u06cc\u0634\u0627\u0646 \u062e\u0644\u0627\u0642']
+  };
+  document.querySelectorAll('.about-board-card').forEach(function(card){card.addEventListener('click',function(){setTimeout(function(){var title=card.querySelector('h3');var list=title&&work[title.textContent.trim()];var body=document.querySelector('.board-resume-body');if(!list||!body)return;var section=document.createElement('section');section.className='resume-block';section.innerHTML='<h3>\u0633\u0648\u0627\u0628\u0642 \u06a9\u0627\u0631\u06cc</h3><ul>'+list.map(function(item){return '<li>'+item+'</li>'}).join('')+'</ul>';body.querySelectorAll('.resume-block').forEach(function(block){if(block.querySelector('h3')&&block.querySelector('h3').textContent.indexOf('\u0633\u0648\u0627\u0628\u0642')===0)block.remove()});body.insertBefore(section,body.lastElementChild)},0)})});
+}());
+</script>
+</body>
+</html>
