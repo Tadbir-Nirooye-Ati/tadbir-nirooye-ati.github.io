@@ -2,25 +2,26 @@
   'use strict';
 
   function renderSharedChrome() {
-    var page = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    var segments = window.location.pathname.split('').filter(Boolean);
+    var page = (segments.pop() || 'index').toLowerCase();
     var links = [
-      ['index.html', 'خانه'],
-      ['about.html', 'درباره ما'],
-      ['fields.html', 'زمینه‌های فعالیت'],
-      ['equipment.html', 'تجهیزات'],
-      ['products.html', 'محصولات'],
-      ['projects.html', 'پروژه‌ها'],
-      ['clients.html', 'کارفرمایان'],
-      ['rankings.html', 'رتبه‌ها']
+      ['index', '', 'خانه'],
+      ['about', 'about/', 'درباره ما'],
+      ['fields', 'fields/', 'زمینه‌های فعالیت'],
+      ['equipment', 'equipment/', 'تجهیزات'],
+      ['products', 'products/', 'محصولات'],
+      ['projects', 'projects/', 'پروژه‌ها'],
+      ['clients', 'clients/', 'کارفرمایان'],
+      ['rankings', 'rankings/', 'رتبه‌ها']
     ];
     var nav = document.querySelector('.nav');
     if (nav) {
       nav.innerHTML = '<div class="wrap nav-inner">' +
-        '<a href="index.html" class="brand"><img class="brand-logo" src="images/company-logo.png" alt="لوگوی تدبیر نیروی آتی"><span>تدبیر نیروی آتی<small>مهندسین مشاور</small></span></a>' +
+        '<a href="./" class="brand"><img class="brand-logo" src="images/company-logo.png" alt="لوگوی تدبیر نیروی آتی"><span>تدبیر نیروی آتی<small>مهندسین مشاور</small></span></a>' +
         '<div class="navlinks" id="site-navigation">' + links.map(function (item) {
-          return '<a href="' + item[0] + '"' + (page === item[0] ? ' class="active"' : '') + '>' + item[1] + '</a>';
+          return '<a href="' + item[1] + '"' + (page === item[0] ? ' class="active"' : '') + '>' + item[2] + '</a>';
         }).join('') +
-        '<a href="contact.html" class="nav-contact' + (page === 'contact.html' ? ' active' : '') + '">تماس با ما</a></div>' +
+        '<a href="contact/" class="nav-contact' + (page === 'contact' ? ' active' : '') + '">تماس با ما</a></div>' +
         '<button class="nav-toggle" type="button" aria-label="باز کردن منوی سایت" aria-expanded="false" aria-controls="site-navigation"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>' +
         '</div>';
     }
@@ -29,9 +30,9 @@
     if (footer) {
       footer.className = 'tna-wave-footer';
       footer.innerHTML = '<div class="wrap tna-footer-main">' +
-        '<div class="tna-footer-col"><a class="tna-footer-brand" href="index.html"><img src="images/company-logo.png" alt="لوگوی تدبیر نیروی آتی"><span>تدبیر نیروی آتی<small>مهندسین مشاور</small></span></a><p class="tna-footer-intro">ارائه‌دهنده خدمات تخصصی نقشه‌برداری، GIS، هیدروگرافی، کاداستر و خدمات مهندسی داده‌های مکانی برای پروژه‌های عمرانی و زیرساختی.</p></div>' +
-        '<div class="tna-footer-col"><strong class="tna-footer-label">خدمات ما</strong><a href="fields.html">نقشه‌برداری و GIS</a><a href="fields.html">هیدروگرافی</a><a href="fields.html">کاداستر و املاک</a><a href="fields.html">طراحی و نظارت</a><a href="projects.html">پروژه‌های اجرایی</a></div>' +
-        '<div class="tna-footer-col"><strong class="tna-footer-label">دسترسی سریع</strong><a href="index.html">خانه</a><a href="about.html">درباره شرکت</a><a href="projects.html">پروژه‌ها</a><a href="clients.html">کارفرمایان</a><a href="contact.html">تماس با ما</a></div>' +
+        '<div class="tna-footer-col"><a class="tna-footer-brand" href="./"><img src="images/company-logo.png" alt="لوگوی تدبیر نیروی آتی"><span>تدبیر نیروی آتی<small>مهندسین مشاور</small></span></a><p class="tna-footer-intro">ارائه‌دهنده خدمات تخصصی نقشه‌برداری، GIS، هیدروگرافی، کاداستر و خدمات مهندسی داده‌های مکانی برای پروژه‌های عمرانی و زیرساختی.</p></div>' +
+        '<div class="tna-footer-col"><strong class="tna-footer-label">خدمات ما</strong><a href="fields/">نقشه‌برداری و GIS</a><a href="fields/">هیدروگرافی</a><a href="fields/">کاداستر و املاک</a><a href="fields/">طراحی و نظارت</a><a href="projects/">پروژه‌های اجرایی</a></div>' +
+        '<div class="tna-footer-col"><strong class="tna-footer-label">دسترسی سریع</strong><a href="./">خانه</a><a href="about/">درباره شرکت</a><a href="projects/">پروژه‌ها</a><a href="clients/">کارفرمایان</a><a href="contact/">تماس با ما</a></div>' +
         '<div class="tna-footer-col tna-footer-contact"><strong class="tna-footer-label">اطلاعات تماس</strong><a class="tna-contact-row" href="mailto:Tadbirnirooyeati@gmail.com"><b class="tna-contact-icon">✉</b><span>Tadbirnirooyeati@gmail.com</span></a><span class="tna-contact-row"><b class="tna-contact-icon">⌖</b><span>اصفهان، ایران</span></span><div class="tna-socials"><a href="https://www.instagram.com/tadbir.nirooye.ati" aria-label="اینستاگرام" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5.2" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.05" stroke="currentColor" stroke-width="1.8"/><circle cx="17.65" cy="6.45" r="1.15" fill="currentColor"/></svg></a></div></div>' +
         '</div><div class="wrap tna-footer-bottom"><span>© تمامی حقوق برای تدبیر نیروی آتی محفوظ است.</span><span>نقشه‌برداری · GIS · هیدروگرافی · خدمات مهندسی</span></div>';
     }
