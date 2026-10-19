@@ -1242,7 +1242,7 @@ section:has(.projects-toolbar) .projects-load-more[hidden]{display:none}
 
 /* Match Nivoo subject scale to neighboring equipment photos */
 body.equipment-page .catalog-photo img[src*="product-nivoo"],
-body.equipment-page .catalog-photo img[src*="product-level-laser-green-warm"]{transform:translateY(12px) scale(1.3)!important;transform-origin:center center!important}
+body.equipment-page .catalog-photo img[src*="product-level-laser-green-warm"]{transform:translateY(26px) scale(1.3)!important;transform-origin:center center!important}
 
 
 /* Keep the supplied total-station image framed like the other equipment cards */
