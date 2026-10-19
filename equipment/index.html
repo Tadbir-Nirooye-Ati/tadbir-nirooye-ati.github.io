@@ -107,6 +107,14 @@
         <article class="catalog-card catalog-card-note"><div class="catalog-note-mark">+</div><span class="equipment-eyebrow">READY FOR THE FIELD</span><h4>آماده برای پروژه‌های واقعی</h4><p>انتخاب ابزار مناسب، بخشی از دقت و نظم اجرای پروژه است.</p></article>
       </div>
     </section>
+    <section class="catalog-block" aria-labelledby="drone-tools-title">
+      <div class="catalog-block-title"><span>۰۳</span><h3 id="drone-tools-title">پهپادها</h3><i></i></div>
+      <div class="catalog-grid drone-equipment-grid">
+        <article class="catalog-card"><div class="catalog-photo"><img loading="lazy" src="images/drone-mavic-2-zoom.jpg" alt="پهپاد DJI Mavic 2 Zoom"></div><div class="catalog-card-body"><h4>پهپاد DJI Mavic 2 Zoom</h4></div></article>
+        <article class="catalog-card"><div class="catalog-photo"><img loading="lazy" src="images/drone-dji-matrice.jpg" alt="پهپاد DJI Matrice"></div><div class="catalog-card-body"><h4>پهپاد DJI Matrice</h4></div></article>
+        <article class="catalog-card"><div class="catalog-photo"><img loading="lazy" src="images/drone-dji-phantom.jpg" alt="پهپاد DJI Phantom"></div><div class="catalog-card-body"><h4>پهپاد DJI Phantom</h4></div></article>
+      </div>
+    </section>
   </div>
 </main>
 
@@ -140,13 +148,12 @@
     ['GPS مولتی‌فرکانسه','product-gnss.jpg','ثبت موقعیت و داده‌های مکانی با دقت بالا.'],
     ['لیزر اسکنر سه‌بعدی','product-laser-scanner.jpg','ثبت سریع و دقیق هندسه محیط و سازه.'],
     ['متر لیزری','product-tape-laser.jpg','اندازه‌گیری سریع فاصله در عملیات روزمره.'],
-    ['پهپاد فانتوم 4','product-drone.jpg','ثبت تصاویر و اطلاعات هوایی برای برداشت.']
   ];
   survey.querySelector('h3').textContent = 'تجهیزات نقشه‌برداری و برداشت';
   survey.querySelector('.catalog-block-title > span').textContent = '۰۱';
   [...survey.querySelectorAll('.catalog-card')].forEach((card, i) => {
     const item = surveyItems[i];
-    if (!item) return;
+    if (!item) { card.remove(); return; }
     const image = card.querySelector('img');
     const code = card.querySelector('.catalog-card-body > span');
     const title = card.querySelector('h4');
