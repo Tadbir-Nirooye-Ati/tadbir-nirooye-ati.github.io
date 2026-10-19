@@ -1249,7 +1249,7 @@ body.equipment-page .catalog-photo:has(img[src*="product-total-station"]){paddin
 body.equipment-page .equipment-catalog .catalog-photo img[src*="product-total-station"]{transform:none!important;mix-blend-mode:normal!important;object-fit:cover!important;object-position:center top!important;border-radius:0!important;clip-path:none!important}
 body.equipment-page .collage-main img[src*="product-total-station"]{object-position:center top!important;mix-blend-mode:normal!important}
 
-.equipment-page .drone-equipment-card .catalog-photo{background:#eeeae0!important}
+.equipment-page .drone-equipment-card .catalog-photo,.equipment-page .catalog-card:has(img[src*="product-level-laser-green-warm"]) .catalog-photo{background:#b3a69e!important}
 .equipment-page .drone-equipment-card .catalog-photo img{object-fit:contain!important}
 
 .products-page .prod-img:has(img[src*="product-level-laser-green-warm"]){background:#b3a69e!important}
