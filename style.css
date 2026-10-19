@@ -1248,3 +1248,10 @@ body.equipment-page .catalog-photo img[src*="product-nivoo"]{transform:translate
 body.equipment-page .catalog-photo:has(img[src*="product-total-station"]){padding:0 11px!important;box-sizing:border-box!important}
 body.equipment-page .equipment-catalog .catalog-photo img[src*="product-total-station"]{transform:none!important;mix-blend-mode:normal!important;object-fit:cover!important;object-position:center top!important;border-radius:0!important;clip-path:none!important}
 body.equipment-page .collage-main img[src*="product-total-station"]{object-position:center top!important;mix-blend-mode:normal!important}
+
+.equipment-page .drone-equipment-card .catalog-photo{background:#b3a69e!important}
+.equipment-page .drone-equipment-card .catalog-photo img{object-fit:contain!important}
+
+.products-page .prod-img:has(img[src*="product-level-laser-green-warm"]){background:#b3a69e!important}
+body.equipment-page .catalog-grid .catalog-card .catalog-photo{border-radius:0 0 6px 6px!important;clip-path:inset(0 round 0 0 6px 6px)!important}
+body.equipment-page .catalog-grid .catalog-card .catalog-photo>img{border-radius:0 0 6px 6px!important;clip-path:inset(0 round 0 0 6px 6px)!important}

@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261012-frame3">
+<link rel="stylesheet" href="style.css?v=20261019-bgmatch">
 </head>
 <body class="equipment-page">
 <nav class="nav">
@@ -110,9 +110,9 @@
     <section class="catalog-block" aria-labelledby="drone-tools-title">
       <div class="catalog-block-title"><span>۰۳</span><h3 id="drone-tools-title">پهپادها</h3><i></i></div>
       <div class="catalog-grid drone-equipment-grid">
-        <article class="catalog-card"><div class="catalog-photo"><img loading="lazy" src="images/drone-mavic-2-zoom.jpg" alt="پهپاد DJI Mavic 2 Zoom"></div><div class="catalog-card-body"><h4>پهپاد DJI Mavic 2 Zoom</h4></div></article>
-        <article class="catalog-card"><div class="catalog-photo"><img loading="lazy" src="images/drone-dji-matrice.jpg" alt="پهپاد DJI Matrice"></div><div class="catalog-card-body"><h4>پهپاد DJI Matrice</h4></div></article>
-        <article class="catalog-card"><div class="catalog-photo"><img loading="lazy" src="images/drone-dji-phantom.jpg" alt="پهپاد DJI Phantom"></div><div class="catalog-card-body"><h4>پهپاد DJI Phantom</h4></div></article>
+        <article class="catalog-card"><div class="catalog-photo"><img loading="lazy" src="images/drone-mavic-2-zoom-warm.jpg" alt="پهپاد DJI Mavic 2 Zoom"></div><div class="catalog-card-body"><h4>پهپاد DJI Mavic 2 Zoom</h4></div></article>
+        <article class="catalog-card"><div class="catalog-photo"><img loading="lazy" src="images/drone-dji-matrice-warm.jpg" alt="پهپاد DJI Matrice"></div><div class="catalog-card-body"><h4>پهپاد DJI Matrice</h4></div></article>
+        <article class="catalog-card"><div class="catalog-photo"><img loading="lazy" src="images/drone-dji-phantom-warm.jpg" alt="پهپاد DJI Phantom"></div><div class="catalog-card-body"><h4>پهپاد DJI Phantom</h4></div></article>
       </div>
     </section>
   </div>
@@ -124,14 +124,14 @@
   document.querySelectorAll('.equipment-page .catalog-photo').forEach(photo => {
     photo.style.padding = '0';
     photo.style.overflow = 'hidden';
-    photo.style.borderRadius = '22px';
+    photo.style.borderRadius = '0 0 6px 6px';
     const image = photo.querySelector('img');
     if (image) {
       image.style.width = '100%';
       image.style.height = '100%';
       image.style.padding = '0';
-      image.style.borderRadius = '22px';
-      image.style.clipPath = 'inset(0 round 22px)';
+      image.style.borderRadius = '0 0 6px 6px';
+      image.style.clipPath = 'inset(0 round 0 0 6px 6px)';
       image.style.objectFit = 'contain';
     }
   });
@@ -165,6 +165,24 @@
     desc.textContent = item[2];
   });
 
+  const droneBlock = document.querySelector('.equipment-catalog .catalog-block[aria-labelledby="drone-tools-title"]');
+  if (droneBlock) {
+    const droneGrid = droneBlock.querySelector('.drone-equipment-grid');
+    const droneCards = droneGrid ? [...droneGrid.querySelectorAll('.catalog-card')] : [];
+    const surveyGrid = survey.querySelector('.catalog-grid');
+    droneCards.forEach((card, i) => {
+      card.classList.add('drone-equipment-card');
+      const body = card.querySelector('.catalog-card-body');
+      const title = body && body.querySelector('h4');
+      if (body && title) {
+        const code = document.createElement('span');
+        code.textContent = String(10 + i).padStart(2, '0') + ' / FIELD';
+        body.insertBefore(code, title);
+      }
+      surveyGrid.appendChild(card);
+    });
+    droneBlock.remove();
+  }
   const supportGrid = support.querySelector('.catalog-grid');
   supportGrid.classList.add('vehicle-equipment-grid');
   const vehicleCards = [...supportGrid.querySelectorAll('.catalog-card')].slice(0, 2);
