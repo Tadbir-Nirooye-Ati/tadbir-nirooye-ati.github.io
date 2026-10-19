@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261019-bgmatch">
+<link rel="stylesheet" href="style.css?v=20261019-framefill">
 </head>
 <body class="equipment-page">
 <nav class="nav">
@@ -147,6 +147,7 @@
     ['GPS دستی','product-gps-handheld.jpg','ابزار سبک و کاربردی برای برداشت‌های میدانی.'],
     ['GPS مولتی‌فرکانسه','product-gnss.jpg','ثبت موقعیت و داده‌های مکانی با دقت بالا.'],
     ['لیزر اسکنر سه‌بعدی','product-laser-scanner.jpg','ثبت سریع و دقیق هندسه محیط و سازه.'],
+    ['تراز لیزری','product-level-laser-green-warm.jpg','کنترل تراز و هم‌راستایی در عملیات اجرایی.'],
     ['متر لیزری','product-tape-laser.jpg','اندازه‌گیری سریع فاصله در عملیات روزمره.'],
   ];
   survey.querySelector('h3').textContent = 'تجهیزات نقشه‌برداری و برداشت';
@@ -182,6 +183,11 @@
       surveyGrid.appendChild(card);
     });
     droneBlock.remove();
+    const laserCards = [...surveyGrid.querySelectorAll('.catalog-card')].filter(card => {
+      const src = card.querySelector('img')?.getAttribute('src') || '';
+      return src.includes('product-level-laser-green-warm') || src.includes('product-tape-laser');
+    });
+    laserCards.forEach(card => surveyGrid.appendChild(card));
   }
   const supportGrid = support.querySelector('.catalog-grid');
   supportGrid.classList.add('vehicle-equipment-grid');
