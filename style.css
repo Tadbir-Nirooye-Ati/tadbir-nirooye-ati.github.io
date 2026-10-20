@@ -43,7 +43,7 @@ section:has(.projects-toolbar) .projects-toolbar::-webkit-scrollbar{display:none
 @media(min-width:901px){section:has(.projects-toolbar) .projects-toolbar{position:relative!important;top:auto!important;align-self:start!important;z-index:5;will-change:transform}}
 section:has(.projects-toolbar) .filter-btn[data-filter="mapping"]{font-weight:800;color:var(--ink);border-color:rgba(253,221,2,.8);background:#fffdf0}
 section:has(.projects-toolbar) .filter-btn.filter-subcategory{width:calc(100% - 18px);margin-right:18px;font-size:12px;color:var(--muted);position:relative}
-section:has(.projects-toolbar) .filter-btn.filter-subcategory:before{content:"â†³";color:var(--gold);margin-left:7px;font-size:15px}
+section:has(.projects-toolbar) .filter-btn.filter-subcategory:before{content:"↳";color:var(--gold);margin-left:7px;font-size:15px}
 section:has(.projects-toolbar) .filter-btn.filter-subcategory.active{color:var(--gold)}
 section:has(.projects-toolbar) .projects-count{grid-area:count;direction:rtl;margin:0 0 12px;color:var(--muted);font-size:13px;align-self:start}
 section:has(.projects-toolbar) .projects-grid{grid-area:projects;direction:rtl}
