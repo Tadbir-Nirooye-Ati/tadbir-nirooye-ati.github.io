@@ -30,7 +30,7 @@ section:has(.projects-toolbar) .projects-toolbar{grid-area:filters;display:flex;
 section:has(.projects-toolbar) .projects-toolbar::-webkit-scrollbar{height:7px}
 section:has(.projects-toolbar) .projects-toolbar::-webkit-scrollbar-track{background:#f1f1f1;border-radius:10px}
 section:has(.projects-toolbar) .projects-toolbar::-webkit-scrollbar-thumb{background:var(--gold);border-radius:10px}
-section:has(.projects-toolbar) .projects-toolbar:before{content:"Ø¯Ø³ØªÙ‡â€ŒØ¨Ù†Ø¯ÛŒ Ù¾Ø±ÙˆÚ˜Ù‡â€ŒÙ‡Ø§";font-size:18px;font-weight:800;color:var(--ink);padding-bottom:11px;border-bottom:1px solid var(--line)}
+section:has(.projects-toolbar) .projects-toolbar:before{content:"دسته‌بندی پروژه‌ها";font-size:18px;font-weight:800;color:var(--ink);padding-bottom:11px;border-bottom:1px solid var(--line)}
 section:has(.projects-toolbar) .projects-search{order:-1;width:100%;min-width:0;flex:none;margin-bottom:5px;background:var(--soft)}
 section:has(.projects-toolbar) .filter-btn{width:100%;text-align:right;border-radius:5px;padding:10px 12px;font-size:13px;transition:.2s ease}
 section:has(.projects-toolbar) .filter-btn{white-space:nowrap;min-width:max-content}
