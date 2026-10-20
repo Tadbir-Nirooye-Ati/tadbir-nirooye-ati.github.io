@@ -90,7 +90,7 @@
     wrap.classList.add('about-banner-wrap');
     var copy=document.createElement('div');
     copy.className='about-banner-copy';
-    copy.innerHTML='<span class="about-banner-kicker">TNA / COMPANY IDENTITY</span><h1>دقت، زبان<br><em>مشترک ماست</em></h1><p>تدبیر نیروی آتی؛ همراهی متخصص برای تبدیل داده‌های مکانی به تصمیم‌های دقیق و قابل اتکا.</p><a class="about-banner-cta" href="#about-direction">آشنایی با شرکت <b>←</b></a>';
+    copy.innerHTML='<span class="about-banner-kicker">TNA / COMPANY IDENTITY</span><h1>دقت، زبان<br><em>مشترک ماست</em></h1><p>تدبیر نیروی آتی؛ همراهی متخصص برای تبدیل داده‌های مکانی به تصمیم‌های دقیق و قابل اتکا.</p><a class="about-banner-cta" href="about/#about-direction">آشنایی با شرکت <b>←</b></a>';
     var visual=document.createElement('div');
     visual.className='about-banner-visual';
     visual.innerHTML='<div class="about-orbit"></div><div class="about-path about-path-one"></div><div class="about-path about-path-two"></div><div class="about-dossier"><div class="about-dossier-top">TNA / ABOUT US</div><div class="about-dossier-line"></div><div class="about-dossier-title">COMPANY<br>PROFILE</div><div class="about-dossier-mark">TNA</div></div><div class="about-float about-float-one"><b>01</b><span>تخصص</span></div><div class="about-float about-float-two"><b>02</b><span>تعهد</span></div><div class="about-float about-float-three"><b>03</b><span>توسعه</span></div>';
@@ -119,7 +119,7 @@
   var miniNav=document.createElement('nav');
   miniNav.className='about-mini-nav';
   miniNav.setAttribute('aria-label','بخش‌های صفحه درباره ما');
-  miniNav.innerHTML='<div class="wrap"><span class="about-mini-label">در این صفحه می‌خوانید</span><div class="about-mini-links"><a href="#about-direction">مأموریت و چشم‌انداز</a><a href="#about-values">ارزش‌های ما</a><a href="#about-strategy">استراتژی‌ها</a><a href="#about-board">هیئت‌مدیره</a></div></div>';
+  miniNav.innerHTML='<div class="wrap"><span class="about-mini-label">در این صفحه می‌خوانید</span><div class="about-mini-links"><a href="about/#about-direction">مأموریت و چشم‌انداز</a><a href="about/#about-values">ارزش‌های ما</a><a href="about/#about-strategy">استراتژی‌ها</a><a href="about/#about-board">هیئت‌مدیره</a></div></div>';
   var footer=document.querySelector('footer');
   if(footer)footer.parentNode.insertBefore(extra,footer);
   if(footer)footer.parentNode.insertBefore(miniNav,extra);
@@ -189,7 +189,7 @@
   if(footer) footer.parentNode.insertBefore(recovery,footer); else document.body.appendChild(recovery);
   var nav=document.createElement('nav');
   nav.className='about-mini-nav';
-  nav.innerHTML='<div class="wrap"><span class="about-mini-label">در این صفحه می‌خوانید</span><div class="about-mini-links"><a href="#about-direction">مأموریت و چشم‌انداز</a><a href="#about-values">ارزش‌های ما</a><a href="#about-strategy">استراتژی‌ها</a><a href="#about-board">هیئت‌مدیره</a></div></div>';
+  nav.innerHTML='<div class="wrap"><span class="about-mini-label">در این صفحه می‌خوانید</span><div class="about-mini-links"><a href="about/#about-direction">مأموریت و چشم‌انداز</a><a href="about/#about-values">ارزش‌های ما</a><a href="about/#about-strategy">استراتژی‌ها</a><a href="about/#about-board">هیئت‌مدیره</a></div></div>';
   if(footer) footer.parentNode.insertBefore(nav,recovery); else document.body.insertBefore(nav,recovery);
 }());
 </script>
