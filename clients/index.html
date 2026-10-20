@@ -150,10 +150,10 @@
   const track = carousel?.querySelector('.clients-carousel-track');
   const controls = document.querySelector('.clients-carousel-controls');
   if (!carousel || !track) return;
-  const priority = ['electricity.png','property-registration.png','bonyad-maskan.png','surveying-organization.png','municipality-isfahan.png','municipality-tehran.png','municipality-shiraz.png','municipality-ardebil.png','municipality-shahrekord.png','foolad-mobarake.png','zob-ahan.png','mapna.png','keisoon.png','monco.png','basir-andishan.png','ghods-niroo.png','mashanir.png'];
+  const priority = ['electricity.png','surveying-organization.png','property-registration.png','bonyad-maskan.png','municipality-tehran.png','municipality-isfahan.png','municipality-ardebil.png','municipality-shiraz.png','municipality-shahrekord.png','zob-ahan.png','foolad-mobarake.png','keisoon.png','mapna.png','mashanir.png','monco.png','ghods-niroo.png','basir-andishan.png'];
   const cards = [...track.children].sort((a,b) => {
-    const aName = (a.querySelector('img')?.getAttribute('src') || '').split('').pop();
-    const bName = (b.querySelector('img')?.getAttribute('src') || '').split('').pop();
+    const aName = (a.querySelector('img')?.getAttribute('src') || '').split('/').pop();
+    const bName = (b.querySelector('img')?.getAttribute('src') || '').split('/').pop();
     const aIndex = priority.indexOf(aName);
     const bIndex = priority.indexOf(bName);
     return (aIndex < 0 ? priority.length : aIndex) - (bIndex < 0 ? priority.length : bIndex);
